@@ -1,0 +1,31 @@
+
+
+body {
+    background: #fdffc3;
+}
+
+form {
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #000;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.reveal-if-active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+#otherPercentage:checked ~ .reveal-if-active {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    display: inline;
+}
